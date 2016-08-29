@@ -6,7 +6,7 @@ Rails.application.routes.draw do
 #   delete 'welcome/:id'=>'welcome#delete'
 #   post 'welcome'=>'welcome#create'
 # patch 'welcome/:id'=>'welcome#update'
-resources :users
+
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
