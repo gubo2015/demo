@@ -25,6 +25,10 @@ class WelcomeController < ApplicationController
      render json: @user.errors, status: :unprocessable_entity
    end
  end
+ def update
+   @user = User.find(params[:id])
+   @user.update(user_params)
+ end
   def user_params
     params.require(:user).permit(:name, :mobile)
   end
